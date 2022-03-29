@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+message Pizza {
+	repeated string tooping = 1;
+	int32 pulgadas = 2;
+}
+
+message Orden {
+	repeated Pizza pizzas = 1;
+	string direccion = 2;
+}
+
+message ConfirmacionOrden {
+	int64 entrega_estimada = 1;
+}
+
+message Nulo {
+
+}
+
+
+
+service Pizzeria {
+	rpc List(Nulo) returns (Nulo);
+	rpc RegistrarOrden(Orden) returns (ConfirmacionOrden);
+}

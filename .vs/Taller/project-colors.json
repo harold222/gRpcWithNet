@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6981bb3d-74ec-4b3d-81c5-d422c047aab6": {
+      "ProjectGuid": "6981bb3d-74ec-4b3d-81c5-d422c047aab6",
+      "DisplayName": "BlockChain",
+      "ColorIndex": 0
+    },
+    "86ea678a-2c22-4f50-8136-a4aae25c71ec": {
+      "ProjectGuid": "86ea678a-2c22-4f50-8136-a4aae25c71ec",
+      "DisplayName": "Definition",
+      "ColorIndex": 1
+    },
+    "0f641e85-bb85-4707-89d7-4d0a96254484": {
+      "ProjectGuid": "0f641e85-bb85-4707-89d7-4d0a96254484",
+      "DisplayName": "Wallet",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    },
+    "cb850464-8a14-4f25-8166-872565bbbd8d": {
+      "ProjectGuid": "cb850464-8a14-4f25-8166-872565bbbd8d",
+      "DisplayName": "BlockChain",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
