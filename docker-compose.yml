@@ -1,0 +1,31 @@
+# docker-compose build
+# docker-compose up
+
+version: '3.9'
+
+services:
+  blockchain:
+    image: blockchain
+    build:
+      context: ./
+      dockerfile: Blockchain.Dockerfile
+    ports:
+      - "5000:80"
+    networks:
+      - private_network
+  wallet:
+    image: wallet
+    build:
+      context: ./
+      dockerfile: Wallet.Dockerfile
+    networks:
+      - private_network
+    environment:
+      - ASPNETCORE_ENVIRONMENT=development
+    depends_on:
+    - blockchain
+
+networks:
+  private_network:
+    name: rpc
+    driver: bridge
