@@ -25,7 +25,12 @@
       "ProjectGuid": "cb850464-8a14-4f25-8166-872565bbbd8d",
       "DisplayName": "BlockChain",
       "ColorIndex": 3
+    },
+    "4acfd2d4-8408-4554-b7c4-dc6f3fce8a50": {
+      "ProjectGuid": "4acfd2d4-8408-4554-b7c4-dc6f3fce8a50",
+      "DisplayName": "Wallet",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }

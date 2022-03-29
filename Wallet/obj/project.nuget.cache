@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WmIMTKJ7w/WIJyfoWCTwdzo1zHAqD/Q4tc4j4vl4jvACuaVabxvTPYKk0yPyGVtGotWbmMc1wu3ap936y6B+/A==",
+  "dgSpecHash": "EXdafaICLamTGk2K6XtTpOwglVeJviYq5Xz8Orc9elGlo+5XdNikuRG5FM63QNqj01Ub91hOf2k0uP7J2m2hfw==",
   "success": true,
   "projectFilePath": "C:\\Users\\pedra\\OneDrive\\Escritorio\\Taller\\Wallet\\Wallet.csproj",
   "expectedPackageFiles": [
@@ -10,8 +10,7 @@
     "C:\\Users\\pedra\\.nuget\\packages\\grpc.net.common\\2.44.0\\grpc.net.common.2.44.0.nupkg.sha512",
     "C:\\Users\\pedra\\.nuget\\packages\\grpc.tools\\2.45.0\\grpc.tools.2.45.0.nupkg.sha512",
     "C:\\Users\\pedra\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.0.3\\microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
-    "C:\\Users\\pedra\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\pedra\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+    "C:\\Users\\pedra\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
   ],
   "logs": []
 }
