@@ -1,9 +1,4 @@
-C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.csproj.AssemblyReference.cache
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.AssemblyInfoInputs.cache
-C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.AssemblyInfo.cs
-C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.csproj.CoreCompileInputs.cache
-C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\bin\Debug\net5.0\appsettings.json
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\bin\Debug\net5.0\BlockChain.exe
@@ -20,6 +15,10 @@ C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\bin\Debug\net5.0\Grpc.Core.
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\bin\Debug\net5.0\Grpc.Net.Client.dll
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\bin\Debug\net5.0\Grpc.Net.ClientFactory.dll
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\bin\Debug\net5.0\Grpc.Net.Common.dll
+C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.AssemblyInfoInputs.cache
+C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.AssemblyInfo.cs
+C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.csproj.CoreCompileInputs.cache
+C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\scopedcss\bundle\BlockChain.styles.css
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\staticwebassets\BlockChain.StaticWebAssets.Manifest.cache
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.RazorTargetAssemblyInfo.cache

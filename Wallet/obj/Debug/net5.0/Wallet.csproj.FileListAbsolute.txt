@@ -10,7 +10,6 @@ C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\bin\Debug\net5.0\Grpc.Core.Api.
 C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\bin\Debug\net5.0\Grpc.Net.Client.dll
 C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\bin\Debug\net5.0\Grpc.Net.Common.dll
 C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\obj\Debug\net5.0\Wallet.csproj.AssemblyReference.cache
 C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\obj\Debug\net5.0\Wallet.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\obj\Debug\net5.0\Wallet.AssemblyInfoInputs.cache
 C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\obj\Debug\net5.0\Wallet.AssemblyInfo.cs
