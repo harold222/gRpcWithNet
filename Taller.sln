@@ -3,14 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Definition", "Definition", "{86EA678A-2C22-4F50-8136-A4AAE25C71EC}"
-	ProjectSection(SolutionItems) = preProject
-		service.proto = service.proto
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlockChain", "BlockChain\BlockChain.csproj", "{CB850464-8A14-4F25-8166-872565BBBD8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wallet", "Wallet\Wallet.csproj", "{4ACFD2D4-8408-4554-B7C4-DC6F3FCE8A50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wallet", "Wallet\Wallet.csproj", "{4ACFD2D4-8408-4554-B7C4-DC6F3FCE8A50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
