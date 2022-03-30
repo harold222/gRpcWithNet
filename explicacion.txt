@@ -1,0 +1,13 @@
+rpc = llamadas de procedimiento remoto, cuando se ejecuta una funcion de otra computadora
+	como invocar una funcion cualquiera
+grpc = Framework de RPC - genera gran parte de la logica de RPC - streaming bidireccional
+
+.proto = lenguaje de definicion de interfaz
+
+google api common protos
+grpc.net.client
+grpc tools
+grpc core
+
+
+https://www.youtube.com/watch?v=QyxCX2GYHxk&ab_channel=IAmTimCorey
