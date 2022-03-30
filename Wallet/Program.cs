@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.Text;
 using System.Dynamic;
+using TrasactionServer;
+using Grpc.Core;
 
 namespace Wallet
 {
@@ -18,21 +20,38 @@ namespace Wallet
         static async Task Main(string[] args)
         {
             // get current enviroment
-            // string environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            string environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 
             // protocol http unsafe
-            //AppContext.SetSwitch(
-            //    "System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport",
-            //    true
-            //);
+            AppContext.SetSwitch(
+                "System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport",
+                true
+            );
 
-            // var channel = GrpcChannel.ForAddress(GetAddressServer());
+            var channel = GrpcChannel.ForAddress(GetAddressServer());
 
             //var input = new HelloRequest { Name = "Harold" };
             //var client = new Greeter.GreeterClient(channel);
             //var reply = await client.SayHelloAsync(input);
             //Console.WriteLine($"Rspuesta: {reply.Message}");
             //Console.ReadLine();
+
+            var client2 = new Customer.CustomerClient(channel);
+            var resp = client2.GetCustomerInfo(new CustomerLookupModel { UserId = 1 });
+            Console.WriteLine($"resp: {resp}");
+
+            List<CustomerModel> allCustomers = new List<CustomerModel>();
+
+            using (var call = client2.GetNewCustomers(new NewCustomerRequest()))
+            {
+                while (await call.ResponseStream.MoveNext())
+                {
+                    CustomerModel current = call.ResponseStream.Current;
+                    allCustomers.Add(current);
+                    Console.WriteLine(current.FirstName);
+                }
+            }
+
             string command = "";
             do
             {

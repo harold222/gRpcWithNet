@@ -4,10 +4,14 @@ grpc = Framework de RPC - genera gran parte de la logica de RPC - streaming bidi
 
 .proto = lenguaje de definicion de interfaz
 
-google api common protos
-grpc.net.client
-grpc tools
-grpc core
+packages
+Grpc.Net.Client
+Google.Protobuf
+Grpc.Tools
 
+stream = devuelve array
 
-https://www.youtube.com/watch?v=QyxCX2GYHxk&ab_channel=IAmTimCorey
+commands docker = 
+docker network create rpc-network
+docker run -dit -p 5000:80 --network rpc-network --name BlockChain blockchain bash = logs en docker
+docker run -it -e ASPNETCORE_ENVIRONMENT='development' --network rpc-network --name Wallet wallet bash
