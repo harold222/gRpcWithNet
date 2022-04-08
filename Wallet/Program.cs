@@ -38,7 +38,7 @@ namespace Wallet
 
             var client2 = new Customer.CustomerClient(channel);
             var resp = client2.GetCustomerInfo(new CustomerLookupModel { UserId = 1 });
-            Console.WriteLine($"resp: {resp}");
+            // Console.WriteLine($"resp: {resp}");
 
             List<CustomerModel> allCustomers = new List<CustomerModel>();
 
@@ -52,25 +52,48 @@ namespace Wallet
                 }
             }
 
-            string command = "";
+            string menu = "";
             do
             {
-                Console.WriteLine("Ingrese la transaccion: ");
-                command = Console.ReadLine();
+                Console.WriteLine("----------------------------------------------------------");
+                Console.WriteLine("Ingrese la opcion a consultar:");
+                Console.WriteLine("1) Consultar direccion");
+                Console.WriteLine("2) Registrar transaccion");
+                Console.WriteLine("3) Salir");
 
-                string[] users = command.Split('-');
+                string option = Console.ReadLine();
 
-                if (users.Length == 2)
+                if (option == "1")
                 {
-                    string[] amount = users[1].Split(':');
+                    Console.WriteLine("Ingrese la direccion: ");
+                    float result = foundAmountByDirection(Console.ReadLine());
+
+                    if (result != -1)
+                    {
+                        Console.WriteLine($"El saldo total de esta direccion es: {result}");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No se encontro esta direccion, vuelva a intentarlo.");
+                    }
+                }
+                else if (option == "2")
+                {
+                    Console.WriteLine("Ingrese la transaccion: ");
+                    string command = Console.ReadLine();
+
+                    string[] users = command.Split('-');
 
                     if (users.Length == 2)
                     {
                         AddNewTransaction(command);
-                        Console.WriteLine("-------------------SIGUENTE TRANSACCION-------------------");
-                    } else Console.WriteLine("SEGUIR EL FORMATO A-B:40");
-                } else Console.WriteLine("SEGUIR EL FORMATO A-B:40");
-            } while (command != "exit");
+                    }
+                    else Console.WriteLine("SEGUIR EL FORMATO A-B:40");
+                } else
+                {
+                    Console.WriteLine("Ingrese una opcion valida.");
+                }
+            } while (menu != "exit" || menu == "3");
 
             Console.WriteLine("Bye");
         }
@@ -163,6 +186,38 @@ namespace Wallet
                 )
             );
             Console.WriteLine("-------------------------------------------------");
+        }
+
+        private static float foundAmountByDirection(string dir)
+        {
+            float amount = -1;
+
+            Blocks.ForEach(block =>
+            {
+                string[] allTransactions = block.data.Split(',');
+
+                foreach (string transaction in allTransactions)
+                {
+                    string[] directions = transaction.Split('-');
+                    if (directions.Length == 2)
+                    {
+                        string[] values = directions[1].Split(':');
+
+                        if (directions[0] == dir)
+                        {
+                            if (amount == -1) amount = 0;
+                            amount = amount - float.Parse(values[1]);
+                        }
+                        else if (values[0] == dir)
+                        {
+                            if (amount == -1) amount = 0;
+                            amount = float.Parse(values[1]) + amount;
+                        }
+                    }
+                }
+            });
+
+            return amount;
         }
 
         private static string GetCurrentEnvironmentName() => Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");

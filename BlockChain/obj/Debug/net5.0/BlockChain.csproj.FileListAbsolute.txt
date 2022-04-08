@@ -27,3 +27,4 @@ C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\ref\BlockChain.dll
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.pdb
 C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.genruntimeconfig.cache
+C:\Users\pedra\OneDrive\Escritorio\Taller\BlockChain\obj\Debug\net5.0\BlockChain.csproj.AssemblyReference.cache

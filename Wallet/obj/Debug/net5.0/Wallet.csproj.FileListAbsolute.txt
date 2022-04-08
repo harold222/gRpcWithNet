@@ -19,3 +19,4 @@ C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\obj\Debug\net5.0\Wallet.dll
 C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\obj\Debug\net5.0\ref\Wallet.dll
 C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\obj\Debug\net5.0\Wallet.pdb
 C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\obj\Debug\net5.0\Wallet.genruntimeconfig.cache
+C:\Users\pedra\OneDrive\Escritorio\Taller\Wallet\obj\Debug\net5.0\Wallet.csproj.AssemblyReference.cache
